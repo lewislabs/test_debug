@@ -15,4 +15,9 @@ Trying to debug .NET Core on docker from vscode
 
 
 **NOTE: I can't get this working right now with the following environment:**
+OS: Windows 10 Pro (x64)
+.NET Core Sdk version : 2.0.0
+VS Code Version : 1.15.1
+C# Extension Version: 1.12.1
+Docker for Windows version: Version 17.06.1-ce-win24 (13025)
 
