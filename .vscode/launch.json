@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Docker Launch (web)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "cwd": "/app",
+            "program": "/app/test_debug.dll",
+            "sourceFileMap": {
+                "/app": "${workspaceRoot}"
+            },
+            "logging": {
+                "engineLogging": true,
+                "exceptions": true,
+                "moduleLoad": true,
+                "programOutput": true
+            },
+            "pipeTransport": {
+                "pipeProgram": "docker",
+                "pipeCwd": "${workspaceRoot}",
+                "pipeArgs": [
+                    "exec -i test-debug"
+                ],
+                "debuggerPath": "/vsdbg/vsdbg",
+                "quoteArgs": false
+            }
+        }
+    ]
+}
