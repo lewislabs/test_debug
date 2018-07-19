@@ -18,6 +18,13 @@
                 "isBuildCommand": false,
                 "showOutput": "always",
                 "echoCommand": true
+            },
+            {
+                "taskName": "build-native",
+                "command": "dotnet",
+                "args": [
+                    "build"
+                ]
             }
         ]
     },
